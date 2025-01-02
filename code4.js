@@ -38,7 +38,7 @@ gdjs.copyArray(runtimeScene.getObjects("bg"), gdjs.LevelEndCode.GDbgObjects1);
 }
 
 
-};gdjs.LevelEndCode.asyncCallback18972652 = function (runtimeScene, asyncObjectsList) {
+};gdjs.LevelEndCode.asyncCallback18959492 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.LevelEndCode.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Game", false);
 }gdjs.LevelEndCode.localVariables.length = 0;
@@ -52,14 +52,14 @@ gdjs.LevelEndCode.eventsList1 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.LevelEndCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(runtimeScene.getGame().getVariables().getFromIndex(7).getAsNumber()), (runtimeScene) => (gdjs.LevelEndCode.asyncCallback18972652(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(runtimeScene.getGame().getVariables().getFromIndex(8).getAsNumber()), (runtimeScene) => (gdjs.LevelEndCode.asyncCallback18959492(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.LevelEndCode.asyncCallback18973252 = function (runtimeScene, asyncObjectsList) {
+};gdjs.LevelEndCode.asyncCallback18960092 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.LevelEndCode.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "MainMenu", false);
 }gdjs.LevelEndCode.localVariables.length = 0;
@@ -73,7 +73,7 @@ gdjs.LevelEndCode.eventsList2 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.LevelEndCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(runtimeScene.getGame().getVariables().getFromIndex(7).getAsNumber()), (runtimeScene) => (gdjs.LevelEndCode.asyncCallback18973252(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(runtimeScene.getGame().getVariables().getFromIndex(8).getAsNumber()), (runtimeScene) => (gdjs.LevelEndCode.asyncCallback18960092(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -150,10 +150,10 @@ let isConditionTrue_0 = false;
 gdjs.copyArray(runtimeScene.getObjects("CoinCount"), gdjs.LevelEndCode.GDCoinCountObjects1);
 gdjs.copyArray(runtimeScene.getObjects("CoinCountText"), gdjs.LevelEndCode.GDCoinCountTextObjects1);
 {for(var i = 0, len = gdjs.LevelEndCode.GDCoinCountObjects1.length ;i < len;++i) {
-    gdjs.LevelEndCode.GDCoinCountObjects1[i].getBehavior("Text").setText(runtimeScene.getGame().getVariables().getFromIndex(1).getAsString());
+    gdjs.LevelEndCode.GDCoinCountObjects1[i].getBehavior("Text").setText(runtimeScene.getGame().getVariables().getFromIndex(2).getAsString());
 }
 }{for(var i = 0, len = gdjs.LevelEndCode.GDCoinCountTextObjects1.length ;i < len;++i) {
-    gdjs.LevelEndCode.GDCoinCountTextObjects1[i].getBehavior("Text").setText(runtimeScene.getGame().getVariables().getFromIndex(4).getAsString() + ", You Earned");
+    gdjs.LevelEndCode.GDCoinCountTextObjects1[i].getBehavior("Text").setText(runtimeScene.getGame().getVariables().getFromIndex(5).getAsString() + ", You Earned");
 }
 }}
 
@@ -221,7 +221,7 @@ for (var i = 0, k = 0, l = gdjs.LevelEndCode.GDSubmitToLeaderboardBtnObjects1.le
 }
 gdjs.LevelEndCode.GDSubmitToLeaderboardBtnObjects1.length = k;
 if (isConditionTrue_0) {
-{gdjs.evtTools.leaderboards.savePlayerScore(runtimeScene, "4188f837-c916-4a91-a382-f1085282ba43", runtimeScene.getGame().getVariables().getFromIndex(1).getAsNumber(), runtimeScene.getGame().getVariables().getFromIndex(4).getAsString());
+{gdjs.evtTools.leaderboards.savePlayerScore(runtimeScene, "4188f837-c916-4a91-a382-f1085282ba43", runtimeScene.getGame().getVariables().getFromIndex(2).getAsNumber(), runtimeScene.getGame().getVariables().getFromIndex(5).getAsString());
 }{gdjs.evtTools.leaderboards.displayLeaderboard(runtimeScene, "4188f837-c916-4a91-a382-f1085282ba43", true);
 }}
 

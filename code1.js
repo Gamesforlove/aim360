@@ -40,7 +40,7 @@ gdjs.copyArray(runtimeScene.getObjects("bg"), gdjs.SetPlayerNameCode.GDbgObjects
 }
 
 
-};gdjs.SetPlayerNameCode.asyncCallback18435204 = function (runtimeScene, asyncObjectsList) {
+};gdjs.SetPlayerNameCode.asyncCallback18425380 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.SetPlayerNameCode.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "MainMenu", false);
 }gdjs.SetPlayerNameCode.localVariables.length = 0;
@@ -54,17 +54,17 @@ gdjs.SetPlayerNameCode.eventsList1 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.SetPlayerNameCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(runtimeScene.getGame().getVariables().getFromIndex(7).getAsNumber()), (runtimeScene) => (gdjs.SetPlayerNameCode.asyncCallback18435204(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(runtimeScene.getGame().getVariables().getFromIndex(8).getAsNumber()), (runtimeScene) => (gdjs.SetPlayerNameCode.asyncCallback18425380(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.SetPlayerNameCode.asyncCallback18442724 = function (runtimeScene, asyncObjectsList) {
+};gdjs.SetPlayerNameCode.asyncCallback18432900 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.SetPlayerNameCode.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "MainMenu", false);
-}{runtimeScene.getGame().getVariables().getFromIndex(5).setBoolean(false);
+}{runtimeScene.getGame().getVariables().getFromIndex(6).setBoolean(false);
 }gdjs.SetPlayerNameCode.localVariables.length = 0;
 }
 gdjs.SetPlayerNameCode.eventsList2 = function(runtimeScene) {
@@ -76,7 +76,7 @@ gdjs.SetPlayerNameCode.eventsList2 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.SetPlayerNameCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(runtimeScene.getGame().getVariables().getFromIndex(7).getAsNumber()), (runtimeScene) => (gdjs.SetPlayerNameCode.asyncCallback18442724(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(runtimeScene.getGame().getVariables().getFromIndex(8).getAsNumber()), (runtimeScene) => (gdjs.SetPlayerNameCode.asyncCallback18432900(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -137,7 +137,7 @@ gdjs.copyArray(runtimeScene.getObjects("Debug"), gdjs.SetPlayerNameCode.GDDebugO
 gdjs.copyArray(runtimeScene.getObjects("PlayerName"), gdjs.SetPlayerNameCode.GDPlayerNameObjects1);
 gdjs.copyArray(runtimeScene.getObjects("PlayerNameInput"), gdjs.SetPlayerNameCode.GDPlayerNameInputObjects1);
 {for(var i = 0, len = gdjs.SetPlayerNameCode.GDPlayerNameObjects1.length ;i < len;++i) {
-    gdjs.SetPlayerNameCode.GDPlayerNameObjects1[i].getBehavior("Text").setText("Current Name: " + runtimeScene.getGame().getVariables().getFromIndex(4).getAsString());
+    gdjs.SetPlayerNameCode.GDPlayerNameObjects1[i].getBehavior("Text").setText("Current Name: " + runtimeScene.getGame().getVariables().getFromIndex(5).getAsString());
 }
 }{for(var i = 0, len = gdjs.SetPlayerNameCode.GDDebugObjects1.length ;i < len;++i) {
     gdjs.SetPlayerNameCode.GDDebugObjects1[i].getBehavior("Text").setText((( gdjs.SetPlayerNameCode.GDPlayerNameInputObjects1.length === 0 ) ? "" :gdjs.SetPlayerNameCode.GDPlayerNameInputObjects1[0].getBehavior("Text").getText()));
@@ -191,7 +191,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.storage.elementExistsInJSONFile("player", "name");
 }
 if (isConditionTrue_0) {
-{gdjs.evtTools.storage.readStringFromJSONFile("player", "name", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(4));
+{gdjs.evtTools.storage.readStringFromJSONFile("player", "name", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(5));
 }}
 
 }
@@ -220,8 +220,8 @@ for (var i = 0, k = 0, l = gdjs.SetPlayerNameCode.GDGoBtnObjects1.length;i<l;++i
 gdjs.SetPlayerNameCode.GDGoBtnObjects1.length = k;
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("PlayerNameInput"), gdjs.SetPlayerNameCode.GDPlayerNameInputObjects1);
-{runtimeScene.getGame().getVariables().getFromIndex(4).setString((( gdjs.SetPlayerNameCode.GDPlayerNameInputObjects1.length === 0 ) ? "" :gdjs.SetPlayerNameCode.GDPlayerNameInputObjects1[0].getBehavior("Text").getText()));
-}{gdjs.evtTools.storage.writeStringInJSONFile("player", "name", runtimeScene.getGame().getVariables().getFromIndex(4).getAsString());
+{runtimeScene.getGame().getVariables().getFromIndex(5).setString((( gdjs.SetPlayerNameCode.GDPlayerNameInputObjects1.length === 0 ) ? "" :gdjs.SetPlayerNameCode.GDPlayerNameInputObjects1[0].getBehavior("Text").getText()));
+}{gdjs.evtTools.storage.writeStringInJSONFile("player", "name", runtimeScene.getGame().getVariables().getFromIndex(5).getAsString());
 }
 { //Subevents
 gdjs.SetPlayerNameCode.eventsList1(runtimeScene);} //End of subevents
@@ -397,7 +397,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(5), false, false);
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(6), false, false);
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("BackBtn"), gdjs.SetPlayerNameCode.GDBackBtnObjects1);
 {for(var i = 0, len = gdjs.SetPlayerNameCode.GDBackBtnObjects1.length ;i < len;++i) {
@@ -416,7 +416,7 @@ gdjs.copyArray(runtimeScene.getObjects("BackBtn"), gdjs.SetPlayerNameCode.GDBack
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(5), true, false);
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(6), true, false);
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("BackBtn"), gdjs.SetPlayerNameCode.GDBackBtnObjects1);
 {for(var i = 0, len = gdjs.SetPlayerNameCode.GDBackBtnObjects1.length ;i < len;++i) {

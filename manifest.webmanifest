@@ -2,7 +2,7 @@
   "name": "Aim 360°",
   "short_name": "Aim 360°",
   "id": "info.miusoft.aim360",
-  "description": "Your Aim is Survival in a 360° Battlefield.\n\nAim 360° is a fast-paced shooter game where survival is the ultimate goal. Alien robots descend from all directions, challenging your precision and reflexes in an immersive 360° battlefield. \n\nArmed with your trusty weapon, you’ll need sharp aim and quick thinking to fend off relentless waves of robotic invaders. Will your skills be enough to survive the chaos?\n",
+  "description": "Your Aim is Survival in a 360° Battlefield.",
   "orientation": "landscape",
   "start_url": "./index.html",
   "display": "standalone",
